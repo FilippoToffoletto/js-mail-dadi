@@ -49,18 +49,25 @@ Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 
 const button = document.querySelector('#bottone');
 const result = document.getElementById('result');
+const userNumber = document.getElementById('numberuser');
+const pcNumber = document.getElementById('numberpc');
+
 
 button.addEventListener('click', function(){
     let randomNumberUser = Math.floor(Math.random() * 12 + 2);
     let randomNumberPc = Math.floor(Math.random() * 12 + 2);
     if(randomNumberPc < randomNumberUser){
         result.innerHTML = 'hai vinto';
+    }else if(randomNumberPc === randomNumberUser){
+        result.innerHTML  = 'pareggio';
     }else{
         result.innerHTML = 'hai perso';
     }
-    // let randomNumberPc = document.getElementById('numberpc');
-    // let randomNumberUser = document.getElementById('numberuser');
 
-})
+    userNumber.innerHTML = (randomNumberUser);
+    pcNumber.innerHTML = (randomNumberPc);
+   
+
+});
 
 
