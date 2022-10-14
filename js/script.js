@@ -57,15 +57,18 @@ button.addEventListener('click', function(){
     let randomNumberUser = Math.floor(Math.random() * 12 + 2);
     let randomNumberPc = Math.floor(Math.random() * 12 + 2);
     if(randomNumberPc < randomNumberUser){
-        result.innerHTML = 'hai vinto';
+        result.innerHTML = 'HAI VINTO';
+        result.className = ('blue');
     }else if(randomNumberPc === randomNumberUser){
-        result.innerHTML  = 'pareggio';
+        result.innerHTML  = 'PAREGGIO';
+        result.className = ('white');
     }else{
-        result.innerHTML = 'hai perso';
+        result.innerHTML = 'HAI PERSO';
+        result.className = ('red');
     }
 
     userNumber.innerHTML = (randomNumberUser);
-    pcNumber.innerHTML = (randomNumberPc);
+    pcNumber.innerHTML = ( randomNumberPc);
    
 
 });

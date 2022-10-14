@@ -3,7 +3,7 @@ body{
 }
 
 .ft-container{
-    background-color: #00A896;
+    background-color: #06C29A;
     margin: 0 auto;
     height: 50vh;
     margin-top: 100px;
@@ -13,4 +13,26 @@ body{
 h1{
     padding-top: 20px;
     color: #05668C;
+}
+
+label{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #05668C;
+}
+
+p{
+    font-size: 1.5rem;
+    color: #05668C;
+}
+
+.red{
+    color: red;
+}
+.white{
+    color: white;
+}
+.blue{
+    color: #05668C;
+    text-decoration: underline;
 }
